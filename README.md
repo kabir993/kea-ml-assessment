@@ -26,3 +26,11 @@ For face consistency, I use LoRA with training images.
 ## Q7
 Tools:
 Python, FastAPI
+
+
+
+To run:
+pip install -r requirements.txt
+python similarity.py
+uvicorn api:app --reload
+
