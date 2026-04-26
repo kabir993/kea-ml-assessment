@@ -1,36 +1,36 @@
 # ML Engineer Assessment - KeaBuilder
 
-## Q1
-I built a cosine similarity system using Python to match user inputs.
+## Q1 - Similarity System
+I built a simple cosine similarity system using Python.
+It converts text into vectors and finds the most similar input.
 
-## Q2
-I used FastAPI to serve the model. Node.js can call this API.
+## Q2 - ML Serving
+I would use FastAPI to serve the model.
+Node.js can call this API.
 
-## Q3
-I created two tables:
-- user_inputs
-- predictions
+## Q3 - Schema
+user_inputs:
+- id
+- user_id
+- raw_text
+- created_at
 
-## Q4
-For slow responses, I use loading UI.
+predictions:
+- id
+- input_id
+- prediction
+- confidence
 
-## Q5
-Challenges:
+## Q4 - Slow Response
+I would use loading UI so users know the system is working.
+
+## Q5 - Challenges
 - Environment issues
 - Data mismatch
 - Scaling
 
-## Q6
-For face consistency, I use LoRA with training images.
+## Q6 - LoRA
+Train model on images and use a trigger token for consistency.
 
-## Q7
-Tools:
-Python, FastAPI
-
-
-
-To run:
-pip install -r requirements.txt
-python similarity.py
-uvicorn api:app --reload
-
+## Q7 - Tools
+Python, FastAPI, basic ML
